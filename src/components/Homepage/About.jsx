@@ -14,10 +14,10 @@ const About = () => {
                   About AvioTrack
                 </h1>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  AvioTrack is a digital reference platform created to support maintenance procedures and fault diagnosis in light aircraft, with a specific focus on the pitot-static system. This project was developed as part of a research initiative that aims to simplify and standardize how aviation personnel access procedural guidance. It helps reduce human error, improve retrieval speed, and ensure consistent reference over time.  
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed mt-4">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                By combining content from official manuals and past maintenance data, AvioTrack offers a clear and reliable solution for aviation technicians, students, and professionals. Our mission is to support aviation safety by making accurate information easier to access and apply.
                 </p>
               </div>
               {/* Logo Column */}

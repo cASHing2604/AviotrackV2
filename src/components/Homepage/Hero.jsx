@@ -10,11 +10,14 @@ const Hero = () => {
             Navigate Maintenance Smarter with AvioTrack
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Access fast, reliable, and standardized procedures, one click at a time.
           </p>
+          <a href='/guidelines'>
           <button className="py-4 px-8 bg-blue-900 hover:bg-blue-800 text-white rounded-xl text-lg md:text-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500">
             Get Started
           </button>
+          </a>
+          
         </div>
       </section>
     </div>

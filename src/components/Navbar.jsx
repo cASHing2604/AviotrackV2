@@ -4,6 +4,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-full w-3/4 max-w-6xl px-16 py-4 flex items-center justify-between">
       {/* Logo + Brand Text */}
+      <a href='/'>
       <div className="flex items-center space-x-4">
         <img
           src="/logo.jpeg"
@@ -14,6 +15,8 @@ const Navbar = () => {
           AvioTrack
         </span>
       </div>
+      </a>
+     
 
       {/* Navigation Links */}
       <div className="flex space-x-8">
