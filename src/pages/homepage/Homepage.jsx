@@ -13,6 +13,7 @@ const HomePage = () => {
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     }
+    
 
     if (mapRef.current && navigator.geolocation && window.google) {
       navigator.geolocation.getCurrentPosition(({ coords }) => {
