@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-full w-3/4 max-w-6xl px-6 md:px-16 py-4 flex items-center justify-between">
       
       {/* Logo + Brand Text */}
-      <a href='/'>
+      <Link to="/">
         <div className="flex items-center space-x-4">
           <img
             src="/logo.jpeg"
@@ -19,7 +20,7 @@ const Navbar = () => {
             AvioTrack
           </span>
         </div>
-      </a>
+      </Link>
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-8">
@@ -29,9 +30,12 @@ const Navbar = () => {
         <a href="/#contact" className="text-lg text-gray-700 hover:text-primary-700 font-medium">
           Contact
         </a>
-        <a href="/guidelines" className="text-lg text-gray-700 hover:text-primary-700 font-medium">
+        <Link to="/guidelines" className="text-lg text-gray-700 hover:text-primary-700 font-medium">
           Guidelines
-        </a>
+        </Link>
+        <Link to="/manual" className="text-lg text-gray-700 hover:text-primary-700 font-medium">
+          Manual
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -51,9 +55,12 @@ const Navbar = () => {
           <a href="/#contact" className="text-lg text-gray-700 hover:text-primary-700 font-medium text-center">
             Contact
           </a>
-          <a href="/guidelines" className="text-lg text-gray-700 hover:text-primary-700 font-medium text-center">
+          <Link to="/guidelines" className="text-lg text-gray-700 hover:text-primary-700 font-medium text-center">
             Guidelines
-          </a>
+          </Link>
+          <Link to="/manual" className="text-lg text-gray-700 hover:text-primary-700 font-medium text-center">
+            Manual
+          </Link>
         </div>
       )}
     </nav>

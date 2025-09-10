@@ -25,9 +25,11 @@ const aircraftData = [
   </div>
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(3)</div>
-    <div style="display: table-cell;">Disconnect the electrical connectors from the pitot heater and the pitot heat ground.</div>
+    <div style="display: table-cell;">Disconnect the electrical connectors from the pitot heater and the pitot heat ground.
+    </div>
   </div>
 </div>`,
+manualPage: 688,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -109,6 +111,7 @@ const aircraftData = [
   </div>
 </div>
 `,
+manualPage: 688,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -199,6 +202,7 @@ const aircraftData = [
     <div style="display: table-cell;">Remove and discard all nylon spiral wrap insulation.</div>
   </div>
 </div> `,
+manualPage: 696,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -266,27 +270,27 @@ manualInstruction: `
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(1)</div>
     <div style="display: table-cell;">
-      Cut new nylon spiral wrap into two pieces. Make one piece <strong>4.0 inches</strong> in length and one piece <strong>8.0 inches</strong> in length.
+      Cut new nylon spiral wrap into two pieces. Make one piece 4.0 inches in length and one piece 8.0 inches in length.
     </div>
   </div>
 
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(2)</div>
     <div style="display: table-cell;">
-      Start <strong>0.10 inch</strong> from the pitot tube and install the <strong>4.0-inch</strong> piece of spiral wrap around the pitot tube heater assembly.<br>
+      Start 0.10 inch from the pitot tube and install the 4.0-inch piece of spiral wrap around the pitot tube heater assembly.<br>
       (a) Trim as necessary.
     </div>
   </div>
 </div>
 
 <br>
-<strong style="color: red;">CAUTION:</strong> Do not let the pitot heater assembly wire leads touch the pitot ram air tubing, wire bundles, or heat-sensitive components. The pitot tube heater assembly wire leads operate at high temperatures.<br><br>
+<span style="color: red;">CAUTION:</span> Do not let the pitot heater assembly wire leads touch the pitot ram air tubing, wire bundles, or heat-sensitive components. The pitot tube heater assembly wire leads operate at high temperatures.<br><br>
 
 <div style="display: table;">
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(3)</div>
     <div style="display: table-cell;">
-      Install the <strong>8.0-inch</strong> piece of spiral wrap around the pitot ram air tube.<br>
+      Install the 8.0-inch piece of spiral wrap around the pitot ram air tube.<br>
       (a) Trim as necessary.
     </div>
   </div>
@@ -300,8 +304,8 @@ manualInstruction: `
 </div>
 
 <br>
-<strong style="color: red;">CAUTION:</strong> Do not blow through the pitot lines toward the instrument, as damage will occur to the instruments if you do.<br><br>
-<strong style="color: red;">CAUTION:</strong> Keep the pitot tube assembly clean and make sure that all system components are free of blockage and leaks for correct operation.<br><br>
+<span style="color: red;">CAUTION:</span> Do not blow through the pitot lines toward the instrument, as damage will occur to the instruments if you do.<br><br>
+<span style="color: red;">CAUTION:</span> Keep the pitot tube assembly clean and make sure that all system components are free of blockage and leaks for correct operation.<br><br>
 
 <div style="display: table;">
   <div style="display: table-row;">
@@ -319,6 +323,7 @@ manualInstruction: `
   </div>
 </div>
 `,
+manualPage: 696,
 maintenanceRecord: `
 <table border="1" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -402,6 +407,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div> `,
+manualPage: 688,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -485,6 +491,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 688,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -575,6 +582,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 696,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -665,6 +673,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 696,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -748,6 +757,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 696,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -824,6 +834,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 696,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -902,6 +913,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -985,6 +997,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1075,6 +1088,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1165,6 +1179,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1255,6 +1270,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1345,6 +1361,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1449,6 +1466,7 @@ maintenanceRecord: `
     </div>
   </div>
 </div>`,
+manualPage: 698,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1541,7 +1559,7 @@ maintenanceRecord: `
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(5)</div>
     <div style="display: table-cell;">
-      Slowly apply the vacuum until the altimeter shows a <strong>1,000-foot</strong> increase in altitude.
+      Slowly apply the vacuum until the altimeter shows a 1,000-foot increase in altitude.
     </div>
   </div>
 
@@ -1555,8 +1573,8 @@ maintenanceRecord: `
   <div style="display: table-row;">
     <div style="display: table-cell; padding-right: 8px;">(7)</div>
     <div style="display: table-cell;">
-      If the altimeter loss is not more than <strong>100 feet</strong> after one minute, the system passes. Slowly release the vacuum to return the system to ambient pressure.<br><br>
-      If the loss is more than <strong>100 feet</strong>, tighten all connections and repeat the test. If leakage persists, do the following:<br><br>
+      If the altimeter loss is not more than 100 feet after one minute, the system passes. Slowly release the vacuum to return the system to ambient pressure.<br><br>
+      If the loss is more than 100 feet, tighten all connections and repeat the test. If leakage persists, do the following:<br><br>
       <div style="padding-left: 20px;">
         (a) Disconnect the static pressure lines from the airspeed indicator and the vertical speed indicator. Use suitable fittings to connect the lines together so that only the altimeter is connected to the static pressure system.<br><br>
         (b) Repeat the leakage test to determine if the problem is in the static system or the instruments.<br><br>
@@ -1573,40 +1591,42 @@ maintenanceRecord: `
 
 <div style="display: table;">
   <div style="display: table-row;">
-    <div style="display: table-cell; padding-right: 8px;">b.1</div>
+    <div style="display: table-cell; padding-right: 8px;"><u>1</u></div>
     <div style="display: table-cell;">
       Attach a source of positive pressure to the static source opening.
     </div>
   </div>
 
   <div style="display: table-row;">
-    <div style="display: table-cell; padding-right: 8px;">b.2</div>
+    <div style="display: table-cell; padding-right: 8px;"><u>2</u></div>
     <div style="display: table-cell;">
-      Slowly apply positive pressure until the altimeter decreases by <strong>500 feet</strong> and stabilizes.
+      Slowly apply positive pressure until the altimeter decreases by 500 feet and stabilizes.
     </div>
   </div>
 
   <div style="display: table-row;">
-    <div style="display: table-cell; padding-right: 8px;">b.3</div>
+    <div style="display: table-cell; padding-right: 8px;"><u>3</u></div>
     <div style="display: table-cell;">
       Apply a solution of mild soap and water to line connections and the static source flange. Look for bubbles to identify leaks.
     </div>
   </div>
 
   <div style="display: table-row;">
-    <div style="display: table-cell; padding-right: 8px;">b.4</div>
+    <div style="display: table-cell; padding-right: 8px;"><u>4</u></div>
     <div style="display: table-cell;">
       Tighten any leaking connections. Repair or replace damaged parts.
     </div>
   </div>
 
   <div style="display: table-row;">
-    <div style="display: table-cell; padding-right: 8px;">b.5</div>
+    <div style="display: table-cell; padding-right: 8px;"><u>5</u></div>
     <div style="display: table-cell;">
       Reconnect the airspeed indicator and vertical speed indicator to the static pressure system and repeat the leak test.
     </div>
   </div>
-</div>`,
+</div>
+`,
+manualPage: 699,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1672,10 +1692,11 @@ maintenanceRecord: `
     <div style="display: table-cell; padding-right: 8px;">(1)</div>
     <div style="display: table-cell;">
       Keep static lines clear and connections tight. All models have a static source sump that collects moisture and keeps the system clear.<br><br>
-      If necessary, disconnect the static line at the first instrument it is connected to, and then blow the line clear with <strong>low-pressure air</strong>.
+      If necessary, disconnect the static line at the first instrument it is connected to, and then blow the line clear with low-pressure air.
     </div>
-  </div>
-</div>`,
+  </
+`,
+manualPage: 700,
     maintenanceRecord: `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1741,10 +1762,9 @@ maintenanceRecord: `
     <div style="display: table-cell; padding-right: 8px;">(1)</div>
     <div style="display: table-cell;">
       Although the pitot system drains down to the pitot tube opening, condensation can collect in other areas of the system and cause a blockage in the line.<br><br>
-      To remove the blockage, disconnect the line at the airspeed indicator. Using <strong>low-pressure air</strong>, blow from the indicator end of the line toward the pitot tube.
-    </div>
-  </div>
-</div>`,
+      To remove the blockage, disconnect the line at the airspeed indicator. Using low-pressure air, blow from the indicator end of the line toward the
+`,
+manualPage: 699,
     maintenanceRecord:  `
  <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -1915,6 +1935,9 @@ const GuidelinesPage = () => {
   className="text-gray-700 leading-relaxed"
   dangerouslySetInnerHTML={{ __html: item.manualInstruction }}
 ></div>
+{/* PDF Manual Link */}
+<div className="mt-4">
+</div>
                 {item.imageURL && Array.isArray(item.imageURL) && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                     {item.imageURL.map((src, imgIdx) => (
@@ -1931,6 +1954,14 @@ const GuidelinesPage = () => {
                     ))}
                   </div>
                 )}
+<a 
+  href={`/Manuals/Cessna_172R_1996on_MM_C172RMM.pdf#page=${item.manualPage}`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
+>
+  📄 View Official Maintenance Manual (Page {item.manualPage})
+</a>
               </div>
               <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition">
   <h3 className="text-2xl font-semibold mb-4">Maintenance Record</h3>
