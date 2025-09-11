@@ -1960,7 +1960,7 @@ const GuidelinesPage = () => {
   rel="noopener noreferrer"
   className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
 >
-  📄 View Official Maintenance Manual (Page {item.manualPage})
+  📄 Official Maintenance Manual (Page {item.manualPage})
 </a>
               </div>
               <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition">
