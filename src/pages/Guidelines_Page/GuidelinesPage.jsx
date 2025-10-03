@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { HiOutlineSearch } from 'react-icons/hi';
-import Fig1 from '/AVioTrack images/Figure201_Sheet1.png';
-import Fig2 from '/AVioTrack images/Figure201_Sheet2.png';
-import Fig3 from '/AVioTrack images/Figure201_Sheet3.png';
-import Fig4 from '/AVioTrack images/Figure202_Sheet1.png';
-import Fig5 from '/AVioTrack images/Figure202_Sheet2.png';
-import Fig6 from '/AVioTrack images/Figure202_Sheet3.png';
-import Fig7 from '/AVioTrack images/Figure202_Sheet4.png';
-import Fig8 from '/AVioTrack images/Figure203_Sheet1.png';
+import Fig1 from '../../images/Figure201_Sheet1.png';
+import Fig2 from '../../images/Figure201_Sheet2.png';
+import Fig3 from '../../images/Figure201_Sheet3.png';
+import Fig4 from '../../images/Figure202_Sheet1.png';
+import Fig5 from '../../images/Figure202_Sheet2.png';
+import Fig6 from '../../images/Figure202_Sheet3.png';
+import Fig7 from '../../images/Figure202_Sheet4.png';
+import Fig8 from '../../images/Figure203_Sheet1.png';
 
 const aircraftData = [
   {
@@ -1762,7 +1762,9 @@ manualPage: 700,
     <div style="display: table-cell; padding-right: 8px;">(1)</div>
     <div style="display: table-cell;">
       Although the pitot system drains down to the pitot tube opening, condensation can collect in other areas of the system and cause a blockage in the line.<br><br>
-      To remove the blockage, disconnect the line at the airspeed indicator. Using low-pressure air, blow from the indicator end of the line toward the
+      To remove the blockage, disconnect
+the line at the airspeed indicator. With low-pressure air, blow from the indicator end of the line
+toward the pitot tube.
 `,
 manualPage: 699,
     maintenanceRecord:  `
