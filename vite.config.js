@@ -9,7 +9,11 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'logo.jpeg'], // assets to cache
+      includeAssets: [
+        'favicon.ico',
+        'logo.jpeg',
+        'Manuals/Cessna_172R_1996on_MM_C172RMM.pdf'
+      ],
       manifest: {
         name: 'AvioTrack',
         short_name: 'AvioTrack',
@@ -29,6 +33,7 @@ export default defineConfig({
         ]
       },
       workbox: {
+        navigateFallbackDenylist: [/\/Manuals\/.*\.pdf$/],
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === 'image',
@@ -37,7 +42,7 @@ export default defineConfig({
               cacheName: 'images-cache',
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 Days
+                maxAgeSeconds: 60 * 60 * 24 * 30
               }
             }
           },
@@ -49,6 +54,17 @@ export default defineConfig({
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'static-resources'
+            }
+          },
+          {
+            urlPattern: /\/Manuals\/.*\.pdf$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'pdf-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365
+              }
             }
           }
         ]
