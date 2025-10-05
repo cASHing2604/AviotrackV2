@@ -8,6 +8,7 @@ import Fig5 from '../../images/Figure202_Sheet2.png';
 import Fig6 from '../../images/Figure202_Sheet3.png';
 import Fig7 from '../../images/Figure202_Sheet4.png';
 import Fig8 from '../../images/Figure203_Sheet1.png';
+import Fuse from "fuse.js";
 
 const aircraftData = [
   {
@@ -1848,33 +1849,52 @@ const GuidelinesPage = () => {
     setFullscreenImageIndex(prev => (prev < images.length - 1 ? prev + 1 : 0));
   };
 
-  useEffect(() => {
-    if (fullscreenItemIndex === null) return;
-    const handleKeyDown = (e) => {
-      if (e.key === "ArrowLeft") handlePrev();
-      if (e.key === "ArrowRight") handleNext();
-      if (e.key === "Escape") {
-        setFullscreenItemIndex(null);
-        setFullscreenImageIndex(null);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [fullscreenItemIndex]);
-
-  const suggestions = query
-    ? aircraftData.filter(item =>
-        item.type.toLowerCase().includes(query.toLowerCase())
-      )
-    : [];
-
-  const handleSearch = () => {
-    const filtered = aircraftData.filter(item =>
-      item.type.toLowerCase().includes(query.toLowerCase())
-    );
-    setResults(filtered);
-    setShowSuggestions(false);
+useEffect(() => {
+  if (fullscreenItemIndex === null) return;
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowLeft") handlePrev();
+    if (e.key === "ArrowRight") handleNext();
+    if (e.key === "Escape") {
+      setFullscreenItemIndex(null);
+      setFullscreenImageIndex(null);
+    }
   };
+  window.addEventListener("keydown", handleKeyDown);
+  return () => window.removeEventListener("keydown", handleKeyDown);
+}, [fullscreenItemIndex]);
+
+// ✅ OPTION 2 & 3 — Hide suggestions when clicking outside
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    // Only close if the click is outside of the input or suggestion list
+    if (!event.target.closest('.search-wrapper')) {
+      setShowSuggestions(false);
+    }
+  };
+
+  window.addEventListener('click', handleClickOutside);
+  return () => window.removeEventListener('click', handleClickOutside);
+}, []);
+
+
+// 🧠 Fuzzy search setup
+const fuse = new Fuse(aircraftData, {
+  keys: ["type", "manualInstruction", "maintenanceRecord"], // fields to search
+  threshold: 0.4, // 0 = exact match, 1 = very fuzzy
+  ignoreLocation: true,
+});
+
+// 🔍 Use Fuse.js to generate suggestions
+const suggestions = query
+  ? fuse.search(query).map(result => result.item)
+  : [];
+
+
+const handleSearch = () => {
+  const results = fuse.search(query).map(result => result.item);
+  setResults(results);
+  setShowSuggestions(false);
+};
 
   const handleKeyDownSearch = (e) => {
     if (e.key === 'Enter') {
@@ -1900,7 +1920,7 @@ const GuidelinesPage = () => {
           className="w-full text-4xl font-extrabold text-center mb-6 text-gray-900 bg-transparent outline-none"
         />
 
-        <div className="relative">
+        <div className="relative search-wrapper">
           <HiOutlineSearch className="absolute h-5 w-5 left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           <input
             type="text"
