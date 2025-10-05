@@ -12,6 +12,7 @@ export default defineConfig({
       includeAssets: [
         'favicon.ico',
         'logo.jpeg',
+        'manifest.json',
         'Manuals/Cessna_172R_1996on_MM_C172RMM.pdf'
       ],
       manifest: {
@@ -33,20 +34,21 @@ export default defineConfig({
         ]
       },
       workbox: {
-        navigateFallbackDenylist: [/\/Manuals\/.*\.pdf$/],
         runtimeCaching: [
           {
+            // Cache your logo and other images
             urlPattern: ({ request }) => request.destination === 'image',
             handler: 'CacheFirst',
             options: {
               cacheName: 'images-cache',
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 Days
               }
             }
           },
           {
+            // Cache static resources like CSS/JS/HTML
             urlPattern: ({ request }) =>
               request.destination === 'script' ||
               request.destination === 'style' ||
@@ -57,13 +59,14 @@ export default defineConfig({
             }
           },
           {
+            // Cache PDFs (manual)
             urlPattern: /\/Manuals\/.*\.pdf$/,
             handler: 'CacheFirst',
             options: {
               cacheName: 'pdf-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
               }
             }
           }
